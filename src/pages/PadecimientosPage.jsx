@@ -19,7 +19,7 @@ const Padecimientos = () => {
 				<thead className="thead">
 					<tr>
 						<th>Identificación Paciente</th>
-						<th>Nombre Paciente</th>
+						<th>Tratamiento</th>
 						<th>Padecimiento</th>
 					</tr>
 				</thead>
@@ -27,8 +27,8 @@ const Padecimientos = () => {
 					{padecimientos && padecimientos.map((padecimiento) => (
 						<tr key={padecimiento.id}>
 							<td>{padecimiento.idPaciente}</td>
-							<td>{padecimiento.nombrePaciente}</td>
-							<td>{padecimiento.padecimiento}</td>
+							<td>{padecimiento.tratamiento}</td>
+							<td>{padecimiento.nombrePadecimiento}</td>
 						</tr>
 					))}
 				</tbody>
