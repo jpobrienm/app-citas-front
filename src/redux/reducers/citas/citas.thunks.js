@@ -8,3 +8,4 @@ export const loadCitasAsync = () => (dispatch) => {
 		.then((response) => dispatch(actions.citasLoadSuccess(response.data)))
 		.catch((error) => dispatch(actions.citasLoadError(error.message)));
 };
+
